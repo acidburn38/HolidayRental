@@ -1,11 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32112.339
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HoliDayRental", "HomeShare\HoliDayRental.csproj", "{8020D524-9DA0-42F3-906F-C726363F865F}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "HoliDayRental.DB", "HoliDayRental.DB\HoliDayRental.DB.sqlproj", "{86D984FC-8413-4724-93FC-BAAF7FCC59C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{94487A0E-6902-4A82-8A70-305EE07C04F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP", "ASP", "{E4ED0299-5A31-4FBA-B44E-0380E5E3D8FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{0A2F9378-9F37-4220-8762-B35E59E10396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidayRental.DAL", "HolidayRental.DAL\HolidayRental.DAL.csproj", "{CC895FDB-3BC2-44AA-87CF-A695031F2DEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidayRental.Common", "HolidayRental.Common\HolidayRental.Common.csproj", "{D3033E0D-3F63-4CF9-A483-15520BB06704}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +33,21 @@ Global
 		{86D984FC-8413-4724-93FC-BAAF7FCC59C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86D984FC-8413-4724-93FC-BAAF7FCC59C4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{86D984FC-8413-4724-93FC-BAAF7FCC59C4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CC895FDB-3BC2-44AA-87CF-A695031F2DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC895FDB-3BC2-44AA-87CF-A695031F2DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC895FDB-3BC2-44AA-87CF-A695031F2DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC895FDB-3BC2-44AA-87CF-A695031F2DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3033E0D-3F63-4CF9-A483-15520BB06704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3033E0D-3F63-4CF9-A483-15520BB06704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3033E0D-3F63-4CF9-A483-15520BB06704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3033E0D-3F63-4CF9-A483-15520BB06704}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8020D524-9DA0-42F3-906F-C726363F865F} = {E4ED0299-5A31-4FBA-B44E-0380E5E3D8FA}
+		{CC895FDB-3BC2-44AA-87CF-A695031F2DEA} = {94487A0E-6902-4A82-8A70-305EE07C04F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {27899870-7CEA-4A05-A2CC-D1884DDA0644}
