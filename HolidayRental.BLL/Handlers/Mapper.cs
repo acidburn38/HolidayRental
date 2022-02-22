@@ -14,9 +14,9 @@ namespace HolidayRental.BLL.Handlers
         {
             if (entity == null) return null;
             return new B.BienEchange(
-                entity.idBien,
-                entity.idMembre,
-                entity.titre,
+                entity.IdBien,
+                entity.IdMembre,
+                entity.Titre,
                 entity.DescCourte,
                 entity.DescLong,
                 entity.NombrePerson,
@@ -27,7 +27,7 @@ namespace HolidayRental.BLL.Handlers
                 entity.CodePostal,
                 entity.Photo,
                 entity.AssuranceObligatoire,
-                entity.isEnabled,
+                entity.IsEnabled,
                 entity.DisabledDate,
                 entity.Latitude,
                 entity.Longitude,
@@ -40,9 +40,9 @@ namespace HolidayRental.BLL.Handlers
             if (entity == null) return null;
             return new D.BienEchange
             {
-                idBien = entity.idBien,
-                idMembre = entity.idMembre,
-                titre = entity.titre,
+                IdBien = entity.IdBien,
+                IdMembre = entity.IdMembre,
+                Titre = entity.Titre,
                 DescCourte = entity.DescCourte,
                 DescLong = entity.DescLong,
                 NombrePerson = entity.NombrePerson,
@@ -53,7 +53,7 @@ namespace HolidayRental.BLL.Handlers
                 CodePostal = entity.CodePostal,
                 Photo = entity.Photo,
                 AssuranceObligatoire = entity.AssuranceObligatoire,
-                isEnabled = entity.isEnabled,
+                IsEnabled = entity.IsEnabled,
                 DisabledDate = entity.DisabledDate,
                 Latitude = entity.Latitude,
                 Longitude = entity.Longitude,

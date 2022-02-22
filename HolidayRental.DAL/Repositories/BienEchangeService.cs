@@ -67,9 +67,9 @@ namespace HolidayRental.DAL.Repositories
             VALUES
             (@idMembre, @titre, @DescCourte, @DescLong, @NombrePerson, @Pays, @Ville, @Rue,@Numero, @CodePostal, @Photo, @AssuranceObligatoire, @isEnabled, @DisabledDate, @Latitude, @Longitude, @DateCreation)";
                     //Parameters...
-                    SqlParameter p_idMembre = new SqlParameter("idMembre", entity.idMembre);
+                    SqlParameter p_idMembre = new SqlParameter("idMembre", entity.IdMembre);
                     command.Parameters.Add(p_idMembre);
-                    SqlParameter p_titre = new SqlParameter("titre", entity.titre);
+                    SqlParameter p_titre = new SqlParameter("titre", entity.Titre);
                     command.Parameters.Add(p_titre);
                     SqlParameter p_DescCourte = new SqlParameter("DescCourte", entity.DescCourte);
                     command.Parameters.Add(p_DescCourte);
@@ -91,7 +91,7 @@ namespace HolidayRental.DAL.Repositories
                     command.Parameters.Add(p_Photo);
                     SqlParameter p_AssuranceObligatoire = new SqlParameter("AssuranceObligatoire", entity.AssuranceObligatoire);
                     command.Parameters.Add(p_AssuranceObligatoire);
-                    SqlParameter p_isEnabled = new SqlParameter("isEnabled", entity.isEnabled);
+                    SqlParameter p_isEnabled = new SqlParameter("isEnabled", entity.IsEnabled);
                     command.Parameters.Add(p_isEnabled);
                     SqlParameter p_DisabledDate = new SqlParameter("DisabledDate", entity.DisabledDate);
                     command.Parameters.Add(p_DisabledDate);
@@ -114,7 +114,7 @@ namespace HolidayRental.DAL.Repositories
                 using (SqlCommand command = connection.CreateCommand())
                 {
                     command.CommandText = "UPDATE[dbo].[BienEchange] SET [titre] = @titre,[DescCourte] = @DescCourte,[DescLong] = @DescLong, [NombrePerson] = @NombrePerson, [Pays] = @Pays,[Ville] = @Ville, [Rue] = @Rue, [Numero]= @Numero, [CodePostal] = @CodePostal, [Photo] = @Photo, [AssuranceObligatoire] = @AssuranceObligatoire, [isEnabled] = @isEnabled, [DisabledDate] = @DisabledDate, [Latitude] = @Latitude, [Longitude] = @Longitude,[DateCreation] = @DateCreation WHERE [idBien] = @idBien";
-                    SqlParameter p_titre = new SqlParameter("titre", entity.titre);
+                    SqlParameter p_titre = new SqlParameter("titre", entity.Titre);
                     command.Parameters.Add(p_titre);
                     SqlParameter p_DescCourte = new SqlParameter("DescCourte", entity.DescCourte);
                     command.Parameters.Add(p_DescCourte);
@@ -136,7 +136,7 @@ namespace HolidayRental.DAL.Repositories
                     command.Parameters.Add(p_Photo);
                     SqlParameter p_AssuranceObligatoire = new SqlParameter("AssuranceObligatoire", entity.AssuranceObligatoire);
                     command.Parameters.Add(p_AssuranceObligatoire);
-                    SqlParameter p_isEnabled = new SqlParameter("isEnabled", entity.isEnabled);
+                    SqlParameter p_isEnabled = new SqlParameter("isEnabled", entity.IsEnabled);
                     command.Parameters.Add(p_isEnabled);
                     SqlParameter p_DisabledDate = new SqlParameter("DisabledDate", entity.DisabledDate);
                     command.Parameters.Add(p_DisabledDate);

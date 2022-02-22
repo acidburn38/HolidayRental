@@ -8,7 +8,7 @@ namespace HolidayRental.BLL.Entities
 {
     public class Option
     {
-        public int idOption { get; set; }
+        public int IdOption { get; set; }
         public string Libelle { get; set; }
     }
 }

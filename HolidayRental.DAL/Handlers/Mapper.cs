@@ -13,9 +13,9 @@ namespace HolidayRental.DAL.Handlers
             if (record is null) return null;
             return new BienEchange
             {
-                idBien = (int)record[nameof(BienEchange.idBien)],
-                idMembre = (int)record[nameof(BienEchange.idMembre)],
-                titre = (string)record[nameof(BienEchange.titre)],
+                IdBien = (int)record[nameof(BienEchange.IdBien)],
+                IdMembre = (int)record[nameof(BienEchange.IdMembre)],
+                Titre = (string)record[nameof(BienEchange.Titre)],
                 DescCourte = (string)record[nameof(BienEchange.DescCourte)],
                 DescLong = (string)record[nameof(BienEchange.DescLong)],
                 NombrePerson = (int)record[nameof(BienEchange.NombrePerson)],
@@ -26,7 +26,7 @@ namespace HolidayRental.DAL.Handlers
                 CodePostal = (string)record[nameof(BienEchange.CodePostal)],
                 Photo = (string)record[nameof(BienEchange.Photo)],
                 AssuranceObligatoire = (bool)record[nameof(BienEchange.AssuranceObligatoire)],
-                isEnabled = (bool)record[nameof(BienEchange.isEnabled)],
+                IsEnabled = (bool)record[nameof(BienEchange.IsEnabled)],
                 DisabledDate = (DateTime)record[nameof(BienEchange.DisabledDate)],
                 Latitude = (string)record[nameof(BienEchange.Latitude)],
                 Longitude = (string)record[nameof(BienEchange.Longitude)],

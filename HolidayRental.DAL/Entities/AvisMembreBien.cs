@@ -6,11 +6,11 @@ namespace HolidayRental.DAL.Entities
 {
     public class AvisMembreBien
     {
-        public int idAvis { get; set; }
-        public int idMembre { get; set; }
-        public int idBien { get; set; }
-        public int note { get; set; }
-        public string message { get; set; }
+        public int IdAvis { get; set; }
+        public int IdMembre { get; set; }
+        public int IdBien { get; set; }
+        public int Note { get; set; }
+        public string Message { get; set; }
         public DateTime DateAvis { get; set; }
         public bool Approuve { get; set; }
     }

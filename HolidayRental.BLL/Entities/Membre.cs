@@ -8,7 +8,7 @@ namespace HolidayRental.BLL.Entities
 {
     public class Membre
     {
-        public int idMembre { get; set; }
+        public int IdMembre { get; set; }
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public string Email { get; set; }
