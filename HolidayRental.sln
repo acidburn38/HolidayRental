@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidayRental.DAL", "Holida
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidayRental.Common", "HolidayRental.Common\HolidayRental.Common.csproj", "{D3033E0D-3F63-4CF9-A483-15520BB06704}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolidayRental.BLL", "HolidayRental.BLL\HolidayRental.BLL.csproj", "{378CA95F-86C5-4216-B9BD-E961BE0F7EF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,10 @@ Global
 		{D3033E0D-3F63-4CF9-A483-15520BB06704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3033E0D-3F63-4CF9-A483-15520BB06704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3033E0D-3F63-4CF9-A483-15520BB06704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{378CA95F-86C5-4216-B9BD-E961BE0F7EF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{378CA95F-86C5-4216-B9BD-E961BE0F7EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{378CA95F-86C5-4216-B9BD-E961BE0F7EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{378CA95F-86C5-4216-B9BD-E961BE0F7EF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +54,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8020D524-9DA0-42F3-906F-C726363F865F} = {E4ED0299-5A31-4FBA-B44E-0380E5E3D8FA}
 		{CC895FDB-3BC2-44AA-87CF-A695031F2DEA} = {94487A0E-6902-4A82-8A70-305EE07C04F4}
+		{378CA95F-86C5-4216-B9BD-E961BE0F7EF1} = {0A2F9378-9F37-4220-8762-B35E59E10396}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {27899870-7CEA-4A05-A2CC-D1884DDA0644}
