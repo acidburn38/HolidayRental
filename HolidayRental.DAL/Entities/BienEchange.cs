@@ -6,9 +6,9 @@ namespace HolidayRental.DAL.Entities
 {
     public class BienEchange
     {
-        public int Id { get; set; }
-        public int IdMembre { get; set; }
-        public string Titre { get; set; }
+        public int idBien { get; set; }
+        public int idMembre { get; set; }
+        public string titre { get; set; }
         public string DescCourte { get; set; }
         public string DescLong { get; set; }
         public int NombrePerson { get; set; }
@@ -19,7 +19,7 @@ namespace HolidayRental.DAL.Entities
         public string CodePostal { get; set; }
         public string Photo { get; set; }
         public bool AssuranceObligatoire { get; set; }
-        public bool IsEnabled { get; set; }
+        public bool isEnabled { get; set; }
         public DateTime? DisabledDate { get; set; }
         public string Latitude { get; set; }
         public string Longitude { get; set; }

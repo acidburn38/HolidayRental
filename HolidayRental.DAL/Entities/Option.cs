@@ -6,7 +6,7 @@ namespace HolidayRental.DAL.Entities
 {
     public class Option
     {
-        public int IdOption { get; set; }
+        public int idOption { get; set; }
         public string Libelle { get; set; }
     }
 }

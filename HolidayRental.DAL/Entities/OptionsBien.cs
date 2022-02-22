@@ -6,8 +6,8 @@ namespace HolidayRental.DAL.Entities
 {
     public class OptionsBien
     {
-        public int IdOption { get; set; }
-        public int IdBien { get; set; }
+        public int idOption { get; set; }
+        public int idBien { get; set; }
         public string Valeur { get; set; }
     }
 }
