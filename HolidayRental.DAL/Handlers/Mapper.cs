@@ -27,11 +27,14 @@ namespace HolidayRental.DAL.Handlers
                 Photo = (string)record[nameof(BienEchange.Photo)],
                 AssuranceObligatoire = (bool)record[nameof(BienEchange.AssuranceObligatoire)],
                 IsEnabled = (bool)record[nameof(BienEchange.IsEnabled)],
-                DisabledDate = (DateTime)record[nameof(BienEchange.DisabledDate)],
+                DisabledDate = (record[nameof(BienEchange.DisabledDate)] is DBNull) ? null : (DateTime?)record[nameof(BienEchange.DisabledDate)],
                 Latitude = (string)record[nameof(BienEchange.Latitude)],
                 Longitude = (string)record[nameof(BienEchange.Longitude)],
                 DateCreation = (DateTime)record[nameof(BienEchange.DateCreation)],
+                
             };
         }
     }
 }
+//DisabledDate = (DateTime)record[nameof(BienEchange.DisabledDate)],
+//DevPicture = (record[nameof(Developer.DevPicture)] == DBNull.Value) ? null : (string)record[nameof(Developer.DevPicture)],

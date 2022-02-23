@@ -8,7 +8,7 @@ using System.Text;
 
 namespace HolidayRental.DAL.Repositories
 {
-    class BienEchangeService : ServiceBase, IBienEchangeRepository<BienEchange>
+    public class BienEchangeService : ServiceBase, IBienEchangeRepository<BienEchange>
     {
         public void Delete(int idBien)
         {
