@@ -36,5 +36,3 @@ namespace HolidayRental.DAL.Handlers
         }
     }
 }
-//DisabledDate = (DateTime)record[nameof(BienEchange.DisabledDate)],
-//DevPicture = (record[nameof(Developer.DevPicture)] == DBNull.Value) ? null : (string)record[nameof(Developer.DevPicture)],

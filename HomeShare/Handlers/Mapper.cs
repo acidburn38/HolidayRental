@@ -14,6 +14,7 @@ namespace HoliDayRental.Handlers
             if (entity == null) return null;
             return new BienEchangeListItem
             {
+                IdBien = entity.IdBien,
                 Titre = entity.Titre,
                 DescCourte = entity.DescCourte,
                 Pays = entity.Pays,

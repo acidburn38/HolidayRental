@@ -24,9 +24,9 @@ namespace HoliDayRental.Controllers
             return View(model);
         }
 
-        public IActionResult Details(int idBien)
+        public IActionResult Details(int id)
         {
-            BienEchangeDetails model = _bienEchangeService.Get(idBien).ToDetails();
+            BienEchangeDetails model = _bienEchangeService.Get(id).ToDetails();
             return View(model);
         }
     }
