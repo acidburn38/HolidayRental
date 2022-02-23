@@ -35,6 +35,7 @@ namespace HolidayRental.BLL.Handlers
                 );
         }
 
+
         public static D.BienEchange ToDAL(this B.BienEchange entity)
         {
             if (entity == null) return null;
@@ -59,6 +60,25 @@ namespace HolidayRental.BLL.Handlers
                 Longitude = entity.Longitude,
                 DateCreation = entity.DateCreation
             };
+        }
+
+        public static B.Pays ToBLL(this D.Pays entity)
+        {
+            if (entity == null) return null;
+            return new B.Pays(
+                entity.IdPays,
+                entity.Libelle
+                );
+        }
+        public static D.Pays ToDAL(this B.Pays entity)
+        {
+            if (entity == null) return null;
+            return new D.Pays
+            {
+                IdPays = entity.IdPays,
+                Libelle = entity.Libelle
+            };
+
         }
     }
 }

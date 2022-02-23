@@ -41,6 +41,8 @@ namespace HoliDayRental
 
             services.AddScoped<IBienEchangeRepository<HolidayRental.DAL.Entities.BienEchange>, HolidayRental.DAL.Repositories.BienEchangeService>();
             services.AddScoped<IBienEchangeRepository<BienEchange>, BienEchangeService>();
+            services.AddScoped<IPaysRepository<HolidayRental.DAL.Entities.Pays>, HolidayRental.DAL.Repositories.PaysService>();
+            services.AddScoped<IPaysRepository<Pays>, PaysService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

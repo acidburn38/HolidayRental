@@ -10,5 +10,11 @@ namespace HolidayRental.BLL.Entities
     {
         public int IdPays { get; set; }
         public string Libelle { get; set; }
+
+        public Pays(int id, string libelle)
+        {
+            IdPays = id;
+            Libelle = libelle;
+        }
     }
 }

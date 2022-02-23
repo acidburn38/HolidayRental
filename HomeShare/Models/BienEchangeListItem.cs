@@ -19,6 +19,7 @@ namespace HoliDayRental.Models
         [DisplayName("Description")]
         public string DescCourte { get; set; }
         public int Pays { get; set; }
+
         [DisplayName("")]
         public string Photo { get; set; }
     }

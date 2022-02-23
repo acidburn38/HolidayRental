@@ -15,7 +15,7 @@ namespace HolidayRental.DAL.Repositories
             using SqlConnection connection = new SqlConnection(_connString);
             using SqlCommand command = connection.CreateCommand();
             command.CommandText = "DELETE FROM [dbo].[BienEchange] WHERE [idBien] = @idBien,";
-            SqlParameter p_idBien = new SqlParameter() { ParameterName = "id", Value = idBien };
+            SqlParameter p_idBien = new SqlParameter() { ParameterName = "idBien", Value = idBien };
             command.Parameters.Add(p_idBien);
             connection.Open();
             command.ExecuteNonQuery();
