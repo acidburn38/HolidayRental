@@ -27,12 +27,27 @@ namespace HolidayRental.BLL.Entities
         public string Longitude { get; set; }
         public DateTime DateCreation { get; set; }
 
-        //public BienEchange(int id, string nom, string ville)
-        //{
-        //    Id = id;
-        //    Nom = nom;
-        //    Ville = ville;
-        //}
-        // A reprendre ici ce soir!!!
+        public BienEchange(int id, int idMembre, string titre, string desCourte, string descLong, int nombrePerson, int pays, string ville, string rue, string numero, string codePostal, string photo, bool assuranceObligatoire, bool isEnabled, DateTime? disabledDate, string latitude, string longitude, DateTime dateCreation)
+        {
+            IdBien = id;
+            IdMembre = idMembre;
+            Titre = titre;
+            DescCourte = desCourte;
+            DescLong = descLong;
+            NombrePerson = nombrePerson;
+            Pays = pays;
+            Ville = ville;
+            Rue = rue;
+            Numero = numero;
+            CodePostal = codePostal;
+            Photo = photo;
+            AssuranceObligatoire = assuranceObligatoire;
+            IsEnabled = isEnabled;
+            DisabledDate = disabledDate;
+            Latitude = latitude;
+            Longitude = longitude;
+            DateCreation = dateCreation;
+        }
+        // To be continue here...!!!
     }
 }
