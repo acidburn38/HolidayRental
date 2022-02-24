@@ -24,8 +24,11 @@ namespace HoliDayRental.Models
         [DisplayName("Nombre de personne max:")]
         public int NombrePerson { get; set; }
 
-        [DisplayName("Pays:")]
         public int Pays { get; set; }
+        public PaysDetails PaysP { get; set; }
+
+        [DisplayName("Pays:")]
+        public string PaysName { get { return this.PaysP?.Libelle; } }
 
         [DisplayName("Ville:")]
         public string Ville { get; set; }

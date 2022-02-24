@@ -19,7 +19,7 @@ namespace HolidayRental.BLL.Services
         }
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            _paysRepository.Delete(id);
         }
 
         public Pays Get(int idBien)
@@ -29,17 +29,17 @@ namespace HolidayRental.BLL.Services
 
         public IEnumerable<Pays> Get()
         {
-            throw new NotImplementedException();
+            return _paysRepository.Get().Select(pays => pays.ToBLL());
         }
 
         public int Insert(Pays entity)
         {
-            throw new NotImplementedException();
+            return _paysRepository.Insert(entity.ToDAL());
         }
 
         public void Update(int id, Pays entity)
         {
-            throw new NotImplementedException();
+            _paysRepository.Update(id, entity.ToDAL());
         }
     }
 }

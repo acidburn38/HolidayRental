@@ -46,5 +46,15 @@ namespace HoliDayRental.Handlers
                 DateCreation = entity.DateCreation
             };
         }
+
+        public static PaysDetails ToDetails(this Pays entity)
+        {
+            if (entity == null) return null;
+            return new PaysDetails
+            {
+                IdPays = entity.IdPays,
+                Libelle = entity.Libelle,
+            };
+        }
     }
 }

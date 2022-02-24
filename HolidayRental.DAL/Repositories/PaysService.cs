@@ -15,13 +15,13 @@ namespace HolidayRental.DAL.Repositories
             throw new NotImplementedException();
         }
 
-        public Pays Get(int idBien)
+        public Pays Get(int id)
         {
             using SqlConnection connection = new SqlConnection(_connString);
             using SqlCommand command = connection.CreateCommand();
-            command.CommandText = "SELECT [idPays],[Libelle] FROM [Pays] WHERE [idPays] = @idBien";
-            SqlParameter p_idBien = new SqlParameter() { ParameterName = "idBien", Value = idBien };
-            command.Parameters.Add(p_idBien);
+            command.CommandText = "SELECT [idPays],[Libelle] FROM [dbo].[Pays] WHERE [idPays] = @id";
+            SqlParameter p_id = new SqlParameter() { ParameterName = "id", Value = id };
+            command.Parameters.Add(p_id);
             connection.Open();
             SqlDataReader reader = command.ExecuteReader();
             if (reader.Read()) return Mapper.ToPays(reader);
@@ -30,7 +30,12 @@ namespace HolidayRental.DAL.Repositories
 
         public IEnumerable<Pays> Get()
         {
-            throw new NotImplementedException();
+            using SqlConnection connection = new SqlConnection(_connString);
+            using SqlCommand command = connection.CreateCommand();
+            command.CommandText = "SELECT [idPays],[Libelle] FROM [dbo].[Pays]";
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+            while (reader.Read()) yield return Mapper.ToPays(reader);
         }
 
         public int Insert(Pays entity)

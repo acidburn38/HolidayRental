@@ -24,12 +24,14 @@ namespace HoliDayRental.Controllers
         public IActionResult Index()
         {
             IEnumerable<BienEchangeListItem> model = _bienEchangeService.Get().Select(c => c.ToListItem());
+            model = model.Select(p => { p.PaysP = _paysService.Get((int)p.Pays).ToDetails(); return p; });
             return View(model);
         }
 
         public IActionResult Details(int id)
         {
             BienEchangeDetails model = _bienEchangeService.Get(id).ToDetails();
+            model.PaysP = _paysService.Get((int)model.Pays).ToDetails();
             return View(model);
         }
     }

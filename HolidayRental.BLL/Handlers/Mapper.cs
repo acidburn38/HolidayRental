@@ -65,10 +65,12 @@ namespace HolidayRental.BLL.Handlers
         public static B.Pays ToBLL(this D.Pays entity)
         {
             if (entity == null) return null;
-            return new B.Pays(
-                entity.IdPays,
-                entity.Libelle
-                );
+            return new B.Pays
+            {
+                IdPays = entity.IdPays,
+                Libelle = entity.Libelle
+            };
+               
         }
         public static D.Pays ToDAL(this B.Pays entity)
         {
@@ -78,7 +80,6 @@ namespace HolidayRental.BLL.Handlers
                 IdPays = entity.IdPays,
                 Libelle = entity.Libelle
             };
-
         }
     }
 }

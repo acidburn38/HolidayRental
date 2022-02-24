@@ -19,6 +19,10 @@ namespace HoliDayRental.Models
         [DisplayName("Description")]
         public string DescCourte { get; set; }
         public int Pays { get; set; }
+        public PaysDetails PaysP { get; set; }
+
+        [DisplayName("Pays:")]
+        public string PaysName { get { return this.PaysP?.Libelle; } }
 
         [DisplayName("")]
         public string Photo { get; set; }
