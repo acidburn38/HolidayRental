@@ -58,6 +58,8 @@ namespace HolidayRental.DAL.Repositories
             command.Parameters.Add(p_Prenom);
             SqlParameter p_Email = new SqlParameter("Email", entity.Email);
             command.Parameters.Add(p_Email);
+            SqlParameter p_Pays = new SqlParameter("Pays", entity.Pays);
+            command.Parameters.Add(p_Pays);
             SqlParameter p_Telephone = new SqlParameter("Telephone", entity.Telephone);
             command.Parameters.Add(p_Telephone);
             SqlParameter p_Login = new SqlParameter("Login", entity.Login);
@@ -79,6 +81,8 @@ namespace HolidayRental.DAL.Repositories
             command.Parameters.Add(p_Prenom);
             SqlParameter p_Email = new SqlParameter("Email", entity.Email);
             command.Parameters.Add(p_Email);
+            SqlParameter p_Pays = new SqlParameter("Pays", entity.Pays);
+            command.Parameters.Add(p_Pays);
             SqlParameter p_Telephone = new SqlParameter("Telephone", entity.Telephone);
             command.Parameters.Add(p_Telephone);
             SqlParameter p_Login = new SqlParameter("Login", entity.Login);

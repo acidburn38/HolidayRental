@@ -4,50 +4,52 @@
     ViewData["Title"] = "Index";
 }
 
-<p>
-    <h2>Découvrez nos pépites</h2>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Titre)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DescCourte)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PaysName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Photo)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<div class="container-main" style="margin-left:10%; margin-right:10%">
+    <p>
+        <h2>Découvrez nos pépites</h2>
+        <a asp-action="Create">Create New</a>
+    </p>
+    <table class="table">
+        <thead>
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Titre)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.DescCourte)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.PaysName)
-                </td>
-                <td>
-                    <img width="250" src="~/images/properties/@Html.DisplayFor(modelItem => item.Photo)" />
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.IdBien }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.IdBien }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.IdBien })
-                </td>
+                <th>
+                    @Html.DisplayNameFor(model => model.Titre)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DescCourte)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PaysName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Photo)
+                </th>
+                <th></th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Titre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DescCourte)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PaysName)
+                    </td>
+                    <td>
+                        <img width="250" src="~/images/properties/@Html.DisplayFor(modelItem => item.Photo)" />
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.IdBien }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.IdBien }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.IdBien })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -24,13 +24,5 @@ namespace HoliDayRental.Controllers
         {
             return View();
         }
-
-        //Exemple d'ajout de valeur pour une session permettant de spécifier que l'utilisateur est connecté
-        //[HttpPost]
-        //public IActionResult Register()
-        //{
-        //    _httpContext.HttpContext.Session.SetObjectAsJson("IsLogged", true);
-        //    return View();
-        //}
     }
 }
