@@ -44,5 +44,21 @@ namespace HolidayRental.DAL.Handlers
                 Libelle = (string)record[nameof(Pays.Libelle)],
             };
         }
+
+        public static Membre ToMembre(IDataRecord record)
+        {
+            if (record is null) return null;
+            return new Membre
+            {
+                IdMembre = (int)record[nameof(Membre.IdMembre)],
+                Nom = (string)record[nameof(Membre.Nom)],
+                Prenom = (string)record[nameof(Membre.Prenom)],
+                Email = (string)record[nameof(Membre.Email)],
+                Pays = (int)record[nameof(Membre.Pays)],
+                Telephone = (string)record[nameof(Membre.Telephone)],
+                Login = (string)record[nameof(Membre.Login)],
+                Password = (string)record[nameof(Membre.Password)],
+            };
+        }
     }
 }

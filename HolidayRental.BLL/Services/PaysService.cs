@@ -22,9 +22,9 @@ namespace HolidayRental.BLL.Services
             _paysRepository.Delete(id);
         }
 
-        public Pays Get(int idBien)
+        public Pays Get(int id)
         {
-            return _paysRepository.Get(idBien).ToBLL();
+            return _paysRepository.Get(id).ToBLL();
         }
 
         public IEnumerable<Pays> Get()

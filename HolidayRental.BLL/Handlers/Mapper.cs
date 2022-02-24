@@ -81,5 +81,37 @@ namespace HolidayRental.BLL.Handlers
                 Libelle = entity.Libelle
             };
         }
+
+        public static B.Membre ToBLL(this D.Membre entity)
+        {
+            if (entity == null) return null;
+            return new B.Membre
+            {
+                IdMembre = entity.IdMembre,
+                Nom = entity.Nom,
+                Prenom = entity.Prenom,
+                Pays = entity.Pays,
+                Telephone = entity.Telephone,
+                Login = entity.Login,
+                Password = entity.Password
+            };
+
+        }
+
+        public static D.Membre ToDAL(this B.Membre entity)
+        {
+            if (entity == null) return null;
+            return new D.Membre
+            {
+                IdMembre = entity.IdMembre,
+                Nom = entity.Nom,
+                Prenom = entity.Prenom,
+                Pays = entity.Pays,
+                Telephone = entity.Telephone,
+                Login = entity.Login,
+                Password = entity.Password
+            };
+
+        }
     }
 }
