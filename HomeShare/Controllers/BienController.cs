@@ -21,6 +21,8 @@ namespace HoliDayRental.Controllers
             _bienEchangeService = bienEchangeService;
             _paysService = paysService;
         }
+        
+        //action pour récupérer la listes des biens
         public IActionResult Index()
         {
             IEnumerable<BienEchangeListItem> model = _bienEchangeService.Get().Select(c => c.ToListItem());
@@ -28,11 +30,15 @@ namespace HoliDayRental.Controllers
             return View(model);
         }
 
+        //action pour récupérer le détail d'un bien
         public IActionResult Details(int id)
         {
             BienEchangeDetails model = _bienEchangeService.Get(id).ToDetails();
             model.PaysP = _paysService.Get((int)model.Pays).ToDetails();
             return View(model);
         }
+
+        //La prochaine étape est d'ajouter un IActionResult pour créer un nouveau bien via le link "create new"!!!
+        //To be continue...
     }
 }

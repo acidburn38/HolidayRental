@@ -16,6 +16,8 @@ namespace HoliDayRental.Controllers
         {
             _membreService = membreService;
         }
+
+        //action pour créer un formulaire pour s'enregistrer sur le site
         public ActionResult Create()
         {
             return View();
@@ -34,6 +36,7 @@ namespace HoliDayRental.Controllers
                     Nom = collection.Nom,
                     Email = collection.Email,
                     Pays = collection.Pays,
+                    //Pour les pays en principe j'aurais du faire une dropdownlist avec le choix des pays de la table de la DB mais je n'ai pas eu le temps :s
                     Telephone = collection.Telephone,
                     Login = collection.Prenom[0] + collection.Nom,
                     Password = collection.Password
